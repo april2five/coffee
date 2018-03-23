@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style_dropdownmenu.css" rel="stylesheet">
+  <title>Tsunami Coffee</title>
+</head>
+<body>
+
+  <div class="dropdown">
+    <div onclick="myFunction()" class="dropbtn">MENU</div>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Stores</a>
+      <a href="#about">Hours</a>
+      <a href="#contact">wholesale</a>
+    </div>
+  </div>
+
+  <header id="main">
+    <nav class="container">
+      <ul>
+        <li><a href="">Stores</a></li>
+        <li><a href="">Hours</a></li>
+        <li><a href="">Wholesale</a></li>
+      </ul>
+    </nav>
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/logo.png" alt="">
+  </header>
+
+  <div id="supporting" class="container">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/beans.png" alt="">
+    <div class="description">
+      <h2>Great coffee does not happen by accident.</h2>
+      <p>We work side by side with farmers around the world to strengthen farming practices to cultivate the best coffee beans in the world. Then, we train our baristas in the sacred art of the brew process, yielding the most flavorful coffee youve ever tasted.</p>
+      <p>Tsunami Coffee is certified organic and fair trade.</p>
+    </div>
+  </div>
+
+  <div id="rating">
+    <div class="container">
+      <h1>9.4/10: A rush of flavors. Absolutely divine.</h1>
+      <p>~ Coffee Critic</p>
+    </div>
+  </div>
+
+  <div id="gallery" class="container">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/latte.png" alt="">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/coffee-man.png" alt="">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/pastries.png" alt="">
+  </div>
+
+  <div id="location">
+    <div class="container">
+      <div class="map"></div>
+      <h1>Brewed with love in San Francisco.</h1>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Tsunami Coffee</p>
+      <nav>
+        <ul>
+          <li><a href="">Store</a></li>
+          <li><a href="">Hours</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>
